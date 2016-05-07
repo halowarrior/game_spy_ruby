@@ -1,0 +1,3 @@
+[submodule "GameSpy"]
+	path = GameSpy
+	url = https://github.com/halowarrior/GameSpy
