@@ -1,0 +1,7 @@
+#include "../GameSpy/src/GameSpy/darray.c"
+#include "../GameSpy/src/GameSpy/md5c.c"
+#include "../GameSpy/src/GameSpy/common/gsPlatformThread.c"
+#include "../GameSpy/src/GameSpy/common/gsPlatformUtil.c"
+#include "../GameSpy/src/GameSpy/gt2/gt2Auth.c"
+#include "../GameSpy/src/GameSpy/gcdkey/gcdkeyc.c"
+#include "../GameSpy/src/GameSpy/common/gsStringUtil.c"
