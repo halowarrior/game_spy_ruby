@@ -1,0 +1,8 @@
+require 'bundler/gem_tasks'
+require 'ffi'
+require 'ffi-compiler/compile_task'
+
+FFI::Compiler::CompileTask.new('/Users/adam/workspace/game_spy_ruby/ext/game_spy') do |ct|
+  ct.add_define("_MACOSX")
+  ct.add_define("_NO_NOPORT_H_")
+end
