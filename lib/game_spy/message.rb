@@ -2,6 +2,24 @@ class GameSpy::Messsage
   GTI2_MAGIC_STRING = "\xFE\xFE"
   GTI2_MAGIC_STRING_LEN = 2
 
+  # typedef enum
+  # {
+  #   // client-only states
+  #   GTI2AwaitingServerChallenge,  // sent challenge, waiting for server's challenge
+  #   GTI2AwaitingAcceptance,       // sent response, waiting for accept/reject from server
+
+  #   // server-only states
+  #   GTI2AwaitingClientChallenge,  // receiving challenge from a new client
+  #   GTI2AwaitingClientResponse,   // sent challenge, waiting for client's response
+  #   GTI2AwaitingAcceptReject,     // got client's response, waiting for app to accept/reject
+
+  #   // post-negotiation states
+  #   GTI2Connected,                // connected
+  #   GTI2Closing,                  // sent a close message (GTI2Close or GTI2Reject), waiting for confirmation
+  #   GTI2Closed                    // connection has been closed, free it as soon as possible
+  # } GTI2ConnectionState;
+
+
   # message types
   # reliable messages
   # all start with <magic-string> <type> <serial-number> <expected-serial-number>
